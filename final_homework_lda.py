@@ -46,7 +46,7 @@ class LDA:
         self.train_set = train_set
         self.train_set_dimension = train_set_dimension
         self.total_data_num = train_set.shape[0]
-        self.dataNum_each_Class = int(train_set.shape[1]/classNum)
+        self.dataNum_each_Class = int(train_set.shape[1]/classNum)    # 其實只是想表達每個class有五個 training set 而已
         self.ldaDimension = ldaDimension
 
     def fit_transform(self):
